@@ -31,147 +31,503 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 
 ### Object detection, classification & segmentation
 
-![](../_images/sample-detection-with-yolo-thumb.jpg)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-detection-with-yolo-thumb.jpg" alt="Detection with YOLO" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/detection_with_yolo">Detection with YOLO</a></strong> — CLI</p>
+    <p>Object detection and classification with publicly available YOLO models.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> <code>yolox_s</code> (default; many YOLO variants)</p>
+  </div>
+</div>
 
-**[Detection with YOLO](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/detection_with_yolo)** — CLI. Object detection and classification with publicly available YOLO models. Elements: `gvadetect`, `gvaclassify` · Models: `yolox_s` (default; many YOLO variants)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Face Detection and Classification" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/face_detection_and_classification">Face Detection and Classification</a></strong> — CLI</p>
+    <p>Detect faces and estimate age, gender, emotions and facial landmarks.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> <code>centerface</code>, <code>dima806_facial_age_image_detection</code>, <code>dima806_fairface_gender_image_detection</code>, <code>dima806_face_emotions_image_detection</code></p>
+  </div>
+</div>
 
-**[Face Detection and Classification](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/face_detection_and_classification)** — CLI. Detect faces and estimate age, gender, emotions and facial landmarks. Elements: `gvadetect`, `gvaclassify` · Models: `centerface`, `dima806_facial_age_image_detection`, `dima806_fairface_gender_image_detection`, `dima806_face_emotions_image_detection`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-instance-segmentation-thumb.jpg" alt="Instance Segmentation" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/instance_segmentation">Instance Segmentation</a></strong> — CLI</p>
+    <p>Instance segmentation via the <code>object_detect</code> and <code>object_classify</code> bin elements.</p>
+    <p><strong>Elements:</strong> <code>object_detect</code>, <code>object_classify</code></p>
+    <p><strong>Models:</strong> <code>yolo26s-seg</code> (default; also <code>yolo11s-seg</code>)</p>
+  </div>
+</div>
 
-![](../_images/sample-instance-segmentation-thumb.jpg)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Human Pose Estimation" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/human_pose_estimation">Human Pose Estimation</a></strong> — CLI</p>
+    <p>Full-frame human pose estimation.</p>
+    <p><strong>Elements:</strong> <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> <code>yolo26s-pose</code></p>
+  </div>
+</div>
 
-**[Instance Segmentation](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/instance_segmentation)** — CLI. Instance segmentation via the `object_detect` and `object_classify` bin elements. Elements: `object_detect`, `object_classify` · Models: `yolo26s-seg` (default; also `yolo11s-seg`)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Depth Estimation" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/depth_estimation">Depth Estimation</a></strong> — CLI</p>
+    <p>YOLO11n detection followed by Depth Anything V2 depth estimation on detected regions.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvainference</code></p>
+    <p><strong>Models:</strong> <code>yolo11n</code>, <code>Depth-Anything-V2-Small-hf</code></p>
+  </div>
+</div>
 
-**[Human Pose Estimation](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/human_pose_estimation)** — CLI. Full-frame human pose estimation. Elements: `gvaclassify` · Models: `yolo26s-pose`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="License Plate Recognition" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/license_plate_recognition">License Plate Recognition</a></strong> — CLI</p>
+    <p>YOLO detector combined with an optical character recognition model.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvainference</code></p>
+    <p><strong>Models:</strong> <code>yolov8</code> license-plate detector, <code>PP-OCRv4</code></p>
+  </div>
+</div>
 
-**[Depth Estimation](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/depth_estimation)** — CLI. YOLO11n detection followed by Depth Anything V2 depth estimation on detected regions. Elements: `gvadetect`, `gvainference` · Models: `yolo11n`, `Depth-Anything-V2-Small-hf`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-prompted-detection-thumb.jpg" alt="Prompt-based Object Detection" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/prompted_detection">Prompt-based Object Detection</a></strong> — Python</p>
+    <p>Search a video for user-defined objects using an open-vocabulary model (YOLOE).</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code></p>
+    <p><strong>Models:</strong> <code>yoloe-26s-seg</code> (text-prompt, class baked in at export)</p>
+  </div>
+</div>
 
-**[License Plate Recognition](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/license_plate_recognition)** — CLI. YOLO detector combined with an optical character recognition model. Elements: `gvadetect`, `gvainference` · Models: `yolov8` license-plate detector, `PP-OCRv4`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-geti-deployment-thumb.jpg" alt="Deployment of Geti™ models" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/geti_deployment">Deployment of Geti™ models</a></strong> — CLI</p>
+    <p>Deploy Geti™-trained models for detection, anomaly detection and classification.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> Geti™-trained (Padim / STFPM / UFlow)</p>
+  </div>
+</div>
 
-![](../_images/sample-prompted-detection-thumb.jpg)
-
-**[Prompt-based Object Detection](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/prompted_detection)** — Python. Search a video for user-defined objects using an open-vocabulary model (YOLOE). Elements: `gvadetect` · Models: `yoloe-26s-seg` (text-prompt, class baked in at export)
-
-![](../_images/sample-geti-deployment-thumb.jpg)
-
-**[Deployment of Geti™ models](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/geti_deployment)** — CLI. Deploy Geti™-trained models for detection, anomaly detection and classification. Elements: `gvadetect`, `gvaclassify` · Models: Geti™-trained (Padim / STFPM / UFlow)
-
-**[Motion Detect](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/motion_detect)** — CLI. Run detection only over motion ROIs (GPU and CPU paths). Elements: `gvamotiondetect`, `gvadetect` · Models: `yolov8n`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Motion Detect" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/motion_detect">Motion Detect</a></strong> — CLI</p>
+    <p>Run detection only over motion ROIs (GPU and CPU paths).</p>
+    <p><strong>Elements:</strong> <code>gvamotiondetect</code>, <code>gvadetect</code></p>
+    <p><strong>Models:</strong> <code>yolov8n</code></p>
+  </div>
+</div>
 
 ### Object tracking & analytics
 
-**[Vehicle and Pedestrian Tracking](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/vehicle_pedestrian_tracking)** — CLI. Object tracking across frames. Elements: `gvatrack`, `gvadetect`, `gvaclassify` · Models: `yolo26s`, `dima806_vehicle_10_types_image_detection`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Vehicle and Pedestrian Tracking" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/vehicle_pedestrian_tracking">Vehicle and Pedestrian Tracking</a></strong> — CLI</p>
+    <p>Object tracking across frames.</p>
+    <p><strong>Elements:</strong> <code>gvatrack</code>, <code>gvadetect</code>, <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> <code>yolo26s</code>, <code>dima806_vehicle_10_types_image_detection</code></p>
+  </div>
+</div>
 
-![](../_images/sample-gvaanalytics-tripwire-thumb.jpg)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-gvaanalytics-tripwire-thumb.jpg" alt="Vehicle Counter with gvaanalytics Tripwires" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/gvaanalytics_tripwire">Vehicle Counter with gvaanalytics Tripwires</a></strong> — Python</p>
+    <p>Count vehicles crossing a virtual line in both directions using tripwires.</p>
+    <p><strong>Elements:</strong> <code>gvaanalytics</code>, <code>gvatrack</code></p>
+    <p><strong>Models:</strong> <code>yolo11n</code></p>
+  </div>
+</div>
 
-**[Vehicle Counter with gvaanalytics Tripwires](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/gvaanalytics_tripwire)** — Python. Count vehicles crossing a virtual line in both directions using tripwires. Elements: `gvaanalytics`, `gvatrack` · Models: `yolo11n`
-
-![](../_images/sample-smart-nvr-thumb.jpg)
-
-**[Smart NVR for Lane Hogging Detection](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/smart_nvr)** — Python. Build an NVR with custom analytics and video storage to detect lane-hogging events. Elements: `gvaanalytics_py`, `gvarecorder_py` · Models: `rtdetr_v2_r50vd` (RT-DETRv2)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-smart-nvr-thumb.jpg" alt="Smart NVR for Lane Hogging Detection" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/smart_nvr">Smart NVR for Lane Hogging Detection</a></strong> — Python</p>
+    <p>Build an NVR with custom analytics and video storage to detect lane-hogging events.</p>
+    <p><strong>Elements:</strong> <code>gvaanalytics_py</code>, <code>gvarecorder_py</code></p>
+    <p><strong>Models:</strong> <code>rtdetr_v2_r50vd</code> (RT-DETRv2)</p>
+  </div>
+</div>
 
 ### Vision-Language Models (VLM) & GenAI
 
-**[Using VLM Models with gvagenai](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvagenai)** — CLI. Video summarization with MiniCPM-V. Elements: `gvagenai` · Models: `MiniCPM-V`, `Phi-4-multimodal-instruct` or `Gemma-3`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Using VLM Models with gvagenai" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvagenai">Using VLM Models with gvagenai</a></strong> — CLI</p>
+    <p>Video summarization with MiniCPM-V.</p>
+    <p><strong>Elements:</strong> <code>gvagenai</code></p>
+    <p><strong>Models:</strong> <code>MiniCPM-V</code>, <code>Phi-4-multimodal-instruct</code> or <code>Gemma-3</code></p>
+  </div>
+</div>
 
-![](../_images/sample-vlm-alerts-thumb.jpg)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-vlm-alerts-thumb.jpg" alt="VLM Alerts" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/vlm_alerts">VLM Alerts</a></strong> — Python</p>
+    <p>Edge alerting pipeline that generates structured JSON alerts per frame with annotated video.</p>
+    <p><strong>Elements:</strong> <code>gvagenai</code></p>
+    <p><strong>Models:</strong> Configurable VLM (e.g. <code>Qwen2.5-VL</code>, <code>InternVL</code>)</p>
+  </div>
+</div>
 
-**[VLM Alerts](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/vlm_alerts)** — Python. Edge alerting pipeline that generates structured JSON alerts per frame with annotated video. Elements: `gvagenai` · Models: Configurable VLM (e.g. `Qwen2.5-VL`, `InternVL`)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-vlm-self-checkout-thumb.jpg" alt="VLM-assisted Self Checkout" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/vlm_self_checkout">VLM-assisted Self Checkout</a></strong> — Python</p>
+    <p>Combine CV object detection with a VLM for item classification, running both locally on edge.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvagenai</code></p>
+    <p><strong>Models:</strong> <code>yolo26s</code>, <code>MiniCPM-V-4_5</code></p>
+  </div>
+</div>
 
-![](../_images/sample-vlm-self-checkout-thumb.jpg)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-onvif-camera-analytics-validation-thumb.jpg" alt="ONVIF Camera Analytics Validation" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/onvif_camera_analytics_validation">ONVIF Camera Analytics Validation</a></strong> — Python</p>
+    <p>Use a VLM as an additional validation layer for ONVIF-enabled analytics cameras.</p>
+    <p><strong>Elements:</strong> <code>gvagenai</code></p>
+    <p><strong>Models:</strong> Configurable VLM</p>
+  </div>
+</div>
 
-**[VLM-assisted Self Checkout](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/vlm_self_checkout)** — Python. Combine CV object detection with a VLM for item classification, running both locally on edge. Elements: `gvadetect`, `gvagenai` · Models: `yolo26s`, `MiniCPM-V-4_5`
-
-![](../_images/sample-onvif-camera-analytics-validation-thumb.jpg)
-
-**[ONVIF Camera Analytics Validation](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/onvif_camera_analytics_validation)** — Python. Use a VLM as an additional validation layer for ONVIF-enabled analytics cameras. Elements: `gvagenai` · Models: Configurable VLM
-
-**[Image Embeddings Generation with ViT](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/lvm)** — CLI. Generate image embeddings using the Vision Transformer component of a CLIP model. Elements: `gvainference` · Models: `clip-vit-large-patch14` (CLIP ViT)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Image Embeddings Generation with ViT" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/lvm">Image Embeddings Generation with ViT</a></strong> — CLI</p>
+    <p>Generate image embeddings using the Vision Transformer component of a CLIP model.</p>
+    <p><strong>Elements:</strong> <code>gvainference</code></p>
+    <p><strong>Models:</strong> <code>clip-vit-large-patch14</code> (CLIP ViT)</p>
+  </div>
+</div>
 
 ### Audio analytics
 
-**[Audio Event Detection](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/audio_detect)** — CLI. Audio event detection, converting results to JSON. Elements: `gvaaudiodetect`, `gvametaconvert`, `gvametapublish` · Models: `aclnet`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Audio Event Detection" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/audio_detect">Audio Event Detection</a></strong> — CLI</p>
+    <p>Audio event detection, converting results to JSON.</p>
+    <p><strong>Elements:</strong> <code>gvaaudiodetect</code>, <code>gvametaconvert</code>, <code>gvametapublish</code></p>
+    <p><strong>Models:</strong> <code>aclnet</code></p>
+  </div>
+</div>
 
-**[Audio Transcription](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/audio_transcribe)** — CLI. Speech transcription using an OpenVINO GenAI Whisper model. Elements: `gvaaudiotranscribe` · Models: `whisper`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Audio Transcription" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/audio_transcribe">Audio Transcription</a></strong> — CLI</p>
+    <p>Speech transcription using an OpenVINO GenAI Whisper model.</p>
+    <p><strong>Elements:</strong> <code>gvaaudiotranscribe</code></p>
+    <p><strong>Models:</strong> <code>whisper</code></p>
+  </div>
+</div>
 
 ### 3D: LiDAR & radar
 
-**[PointPillars Inference with g3dinference](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dinference)** — CLI. Complete LiDAR-only 3D detection pipeline. Elements: `g3dlidarparse`, `g3dinference` · Models: `PointPillars`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="PointPillars Inference with g3dinference" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dinference">PointPillars Inference with g3dinference</a></strong> — CLI</p>
+    <p>Complete LiDAR-only 3D detection pipeline.</p>
+    <p><strong>Elements:</strong> <code>g3dlidarparse</code>, <code>g3dinference</code></p>
+    <p><strong>Models:</strong> <code>PointPillars</code></p>
+  </div>
+</div>
 
-**[LiDAR Parse](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dlidarparse)** — CLI. LiDAR parsing pipeline. Elements: `g3dlidarparse` · Models: — (parsing only)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="LiDAR Parse" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dlidarparse">LiDAR Parse</a></strong> — CLI</p>
+    <p>LiDAR parsing pipeline.</p>
+    <p><strong>Elements:</strong> <code>g3dlidarparse</code></p>
+    <p><strong>Models:</strong> — (parsing only)</p>
+  </div>
+</div>
 
-**[Live LiDAR Capture](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dlidarsrc)** — CLI. Real-time LiDAR capture from a physical device (RoboSense via rs_driver). Elements: `g3dlidarsrc`, `g3dinference` · Models: `PointPillars`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Live LiDAR Capture" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dlidarsrc">Live LiDAR Capture</a></strong> — CLI</p>
+    <p>Real-time LiDAR capture from a physical device (RoboSense via rs_driver).</p>
+    <p><strong>Elements:</strong> <code>g3dlidarsrc</code>, <code>g3dinference</code></p>
+    <p><strong>Models:</strong> <code>PointPillars</code></p>
+  </div>
+</div>
 
-**[Camera + 3D Object Fusion](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dobjectfuser)** — CLI. Fuse 2D camera detections with 3D LiDAR detections. Elements: `g3dobjectfuser`, `gvastreammux` · Models: `yolo11n`, `PointPillars`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Camera + 3D Object Fusion" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dobjectfuser">Camera + 3D Object Fusion</a></strong> — CLI</p>
+    <p>Fuse 2D camera detections with 3D LiDAR detections.</p>
+    <p><strong>Elements:</strong> <code>g3dobjectfuser</code>, <code>gvastreammux</code></p>
+    <p><strong>Models:</strong> <code>yolo11n</code>, <code>PointPillars</code></p>
+  </div>
+</div>
 
-**[Radar Signal Process](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dradarprocess)** — CLI. mmWave radar signal processing with point-cloud detection, clustering and tracking. Elements: `g3dradarprocess` · Models: — (signal processing)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Radar Signal Process" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dradarprocess">Radar Signal Process</a></strong> — CLI</p>
+    <p>mmWave radar signal processing with point-cloud detection, clustering and tracking.</p>
+    <p><strong>Elements:</strong> <code>g3dradarprocess</code></p>
+    <p><strong>Models:</strong> — (signal processing)</p>
+  </div>
+</div>
 
 ### Cameras & input sources
 
-**[RealSense™ Camera](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvarealsense)** — CLI. Capture a video stream from a 3D Intel RealSense™ Depth Camera. Elements: `gvarealsense` · Models: — (capture only)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="RealSense™ Camera" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvarealsense">RealSense™ Camera</a></strong> — CLI</p>
+    <p>Capture a video stream from a 3D Intel RealSense™ Depth Camera.</p>
+    <p><strong>Elements:</strong> <code>gvarealsense</code></p>
+    <p><strong>Models:</strong> — (capture only)</p>
+  </div>
+</div>
 
-![](../_images/sample-onvif-cameras-discovery-thumb.jpg)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-onvif-cameras-discovery-thumb.jpg" alt="ONVIF Camera Discovery" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/onvif_cameras_discovery">ONVIF Camera Discovery</a></strong> — Python</p>
+    <p>Automatically discover ONVIF cameras on the network and launch pipelines for each.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code></p>
+    <p><strong>Models:</strong> Configurable detector</p>
+  </div>
+</div>
 
-**[ONVIF Camera Discovery](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/onvif_cameras_discovery)** — Python. Automatically discover ONVIF cameras on the network and launch pipelines for each. Elements: `gvadetect` · Models: Configurable detector
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Multi-camera deployments" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/multi_stream">Multi-camera deployments</a></strong> — CLI</p>
+    <p>Handle video streams from multiple cameras in a single application.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvafpscounter</code></p>
+    <p><strong>Models:</strong> <code>yolo11s</code> (many YOLO variants)</p>
+  </div>
+</div>
 
-**[Multi-camera deployments](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/multi_stream)** — CLI. Handle video streams from multiple cameras in a single application. Elements: `gvadetect`, `gvafpscounter` · Models: `yolo11s` (many YOLO variants)
-
-**[Multi-Stream Mux/Demux](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/stream_mux_and_demux)** — CLI. Share a single inference pipeline across streams with per-source routing. Elements: `gvastreammux`, `gvastreamdemux` · Models: Configurable detector
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Multi-Stream Mux/Demux" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/stream_mux_and_demux">Multi-Stream Mux/Demux</a></strong> — CLI</p>
+    <p>Share a single inference pipeline across streams with per-source routing.</p>
+    <p><strong>Elements:</strong> <code>gvastreammux</code>, <code>gvastreamdemux</code></p>
+    <p><strong>Models:</strong> Configurable detector</p>
+  </div>
+</div>
 
 ### Metadata: publishing, access & visualization
 
-**[Metadata Publishing](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/metapublish)** — CLI. Convert inference metadata to JSON and publish to file or Kafka/MQTT. Elements: `gvametaconvert`, `gvametapublish` · Models: `centerface`, `dima806_fairface_gender_image_detection`, `dima806_facial_age_image_detection`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Metadata Publishing" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/metapublish">Metadata Publishing</a></strong> — CLI</p>
+    <p>Convert inference metadata to JSON and publish to file or Kafka/MQTT.</p>
+    <p><strong>Elements:</strong> <code>gvametaconvert</code>, <code>gvametapublish</code></p>
+    <p><strong>Models:</strong> <code>centerface</code>, <code>dima806_fairface_gender_image_detection</code>, <code>dima806_facial_age_image_detection</code></p>
+  </div>
+</div>
 
-**[gvaattachroi](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvaattachroi)** — CLI. Define the regions on which inference should be performed. Elements: `gvaattachroi`, `gvadetect` · Models: `yolov8s`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="gvaattachroi" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvaattachroi">gvaattachroi</a></strong> — CLI</p>
+    <p>Define the regions on which inference should be performed.</p>
+    <p><strong>Elements:</strong> <code>gvaattachroi</code>, <code>gvadetect</code></p>
+    <p><strong>Models:</strong> <code>yolov8s</code></p>
+  </div>
+</div>
 
-**[FPS Throttle](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvafpsthrottle)** — CLI. Throttle framerate independently of sink sync, without frame duplication or dropping. Elements: `gvafpsthrottle` · Models: —
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="FPS Throttle" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvafpsthrottle">FPS Throttle</a></strong> — CLI</p>
+    <p>Throttle framerate independently of sink sync, without frame duplication or dropping.</p>
+    <p><strong>Elements:</strong> <code>gvafpsthrottle</code></p>
+    <p><strong>Models:</strong> —</p>
+  </div>
+</div>
 
-![](../_images/sample-watermark-meta-thumb.jpg)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-watermark-meta-thumb.jpg" alt="Watermark Metadata" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/watermark_meta">Watermark Metadata</a></strong> — Python</p>
+    <p>Attach custom drawing primitives (hexagons, lines, circles, text) and render them.</p>
+    <p><strong>Elements:</strong> <code>gvawatermark</code></p>
+    <p><strong>Models:</strong> — (drawing only)</p>
+  </div>
+</div>
 
-**[Watermark Metadata](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/watermark_meta)** — Python. Attach custom drawing primitives (hexagons, lines, circles, text) and render them. Elements: `gvawatermark` · Models: — (drawing only)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Draw Face Attributes (C++)" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/cpp/draw_face_attributes">Draw Face Attributes (C++)</a></strong> — C++</p>
+    <p>Set a C callback to access frame metadata and visualize inference results.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> <code>centerface</code>, <code>dima806_facial_age_image_detection</code>, <code>dima806_fairface_gender_image_detection</code>, <code>dima806_face_emotions_image_detection</code></p>
+  </div>
+</div>
 
-**[Draw Face Attributes (C++)](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/cpp/draw_face_attributes)** — C++. Set a C callback to access frame metadata and visualize inference results. Elements: `gvadetect`, `gvaclassify` · Models: `centerface`, `dima806_facial_age_image_detection`, `dima806_fairface_gender_image_detection`, `dima806_face_emotions_image_detection`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Draw Face Attributes (Python)" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/draw_face_attributes">Draw Face Attributes (Python)</a></strong> — Python</p>
+    <p>Set a Python callback to access frame metadata and visualize inference results.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> <code>centerface</code>, <code>dima806_facial_age_image_detection</code>, <code>dima806_fairface_gender_image_detection</code>, <code>dima806_face_emotions_image_detection</code></p>
+  </div>
+</div>
 
-**[Draw Face Attributes (Python)](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/draw_face_attributes)** — Python. Set a Python callback to access frame metadata and visualize inference results. Elements: `gvadetect`, `gvaclassify` · Models: `centerface`, `dima806_facial_age_image_detection`, `dima806_fairface_gender_image_detection`, `dima806_face_emotions_image_detection`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-open-close-valve-thumb.jpg" alt="Open Close Valve" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/open_close_valve">Open Close Valve</a></strong> — Python</p>
+    <p>Open/close a GStreamer <code>valve</code> branch from a callback based on detection results.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>valve</code></p>
+    <p><strong>Models:</strong> <code>yolo11s</code>, <code>dima806_vehicle_10_types_image_detection</code></p>
+  </div>
+</div>
 
-![](../_images/sample-open-close-valve-thumb.jpg)
-
-**[Open Close Valve](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/open_close_valve)** — Python. Open/close a GStreamer `valve` branch from a callback based on detection results. Elements: `gvadetect`, `valve` · Models: `yolo11s`, `dima806_vehicle_10_types_image_detection`
-
-![](../_images/sample-hello-dlstreamer-thumb.jpg)
-
-**[Hello DL Streamer](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/hello_dlstreamer)** — Python. Build a detection pipeline, analyze metadata to count objects, and visualize results. Elements: `gvadetect`, `gvawatermark` · Models: `yolo11n`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-hello-dlstreamer-thumb.jpg" alt="Hello DL Streamer" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/hello_dlstreamer">Hello DL Streamer</a></strong> — Python</p>
+    <p>Build a detection pipeline, analyze metadata to count objects, and visualize results.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvawatermark</code></p>
+    <p><strong>Models:</strong> <code>yolo11n</code></p>
+  </div>
+</div>
 
 ### Customization & extensibility
 
-**[Custom Post-Processing Library — Classification](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/custom_postproc/classify)** — CLI, C++. Write a custom post-processing library that converts emotion-classification outputs to GstAnalytics metadata. Elements: `gvaclassify` · Models: `centerface`, `hsemotion`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Custom Post-Processing Library — Classification" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/custom_postproc/classify">Custom Post-Processing Library — Classification</a></strong> — CLI, C++</p>
+    <p>Write a custom post-processing library that converts emotion-classification outputs to GstAnalytics metadata.</p>
+    <p><strong>Elements:</strong> <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> <code>centerface</code>, <code>hsemotion</code></p>
+  </div>
+</div>
 
-**[Custom Post-Processing Library — Detection](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/custom_postproc/detect)** — CLI, C++. Write a custom post-processing library that converts YOLOv11 tensor outputs to detection metadata. Elements: `gvadetect` · Models: `yolo11s`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Custom Post-Processing Library — Detection" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/custom_postproc/detect">Custom Post-Processing Library — Detection</a></strong> — CLI, C++</p>
+    <p>Write a custom post-processing library that converts YOLOv11 tensor outputs to detection metadata.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code></p>
+    <p><strong>Models:</strong> <code>yolo11s</code></p>
+  </div>
+</div>
 
-**[gvapython — Face Detection and Classification](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvapython/face_detection_and_classification)** — CLI, Python. Customize a pipeline with a Python script for inference post-processing. Elements: `gvapython`, `gvadetect`, `gvaclassify` · Models: `centerface`, `dima806_fairface_gender_image_detection`, `dima806_facial_age_image_detection`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="gvapython — Face Detection and Classification" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvapython/face_detection_and_classification">gvapython — Face Detection and Classification</a></strong> — CLI, Python</p>
+    <p>Customize a pipeline with a Python script for inference post-processing.</p>
+    <p><strong>Elements:</strong> <code>gvapython</code>, <code>gvadetect</code>, <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> <code>centerface</code>, <code>dima806_fairface_gender_image_detection</code>, <code>dima806_facial_age_image_detection</code></p>
+  </div>
+</div>
 
-**[gvapython — Save Frames with ROI](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvapython/save_frames_with_ROI_only)** — CLI, Python. Use `gvapython` to save video frames containing detected objects to disk. Elements: `gvapython`, `gvadetect` · Models: `centerface`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="gvapython — Save Frames with ROI" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvapython/save_frames_with_ROI_only">gvapython — Save Frames with ROI</a></strong> — CLI, Python</p>
+    <p>Use <code>gvapython</code> to save video frames containing detected objects to disk.</p>
+    <p><strong>Elements:</strong> <code>gvapython</code>, <code>gvadetect</code></p>
+    <p><strong>Models:</strong> <code>centerface</code></p>
+  </div>
+</div>
 
-**[python-elements — Face Detection and Classification](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/python-elements/face_detection_and_classification)** — CLI, Python. Build a custom Python GStreamer element using the GstAnalytics metadata API. Elements: `gvaagelogger_py`, `gvadetect`, `gvaclassify` · Models: `YOLOv8-Face-Detection`, `fairface_age_image_detection`, `fairface_gender_image_detection`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="python-elements — Face Detection and Classification" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/python-elements/face_detection_and_classification">python-elements — Face Detection and Classification</a></strong> — CLI, Python</p>
+    <p>Build a custom Python GStreamer element using the GstAnalytics metadata API.</p>
+    <p><strong>Elements:</strong> <code>gvaagelogger_py</code>, <code>gvadetect</code>, <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> <code>YOLOv8-Face-Detection</code>, <code>fairface_age_image_detection</code>, <code>fairface_gender_image_detection</code></p>
+  </div>
+</div>
 
-**[python-elements — Save Frames with ROI](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/python-elements/save_frames_with_ROI_only)** — CLI, Python. Build a custom Python GStreamer element to save frames with detected objects. Elements: `gvaframesaver_py`, `gvadetect` · Models: `YOLOv8-Face-Detection`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="python-elements — Save Frames with ROI" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/python-elements/save_frames_with_ROI_only">python-elements — Save Frames with ROI</a></strong> — CLI, Python</p>
+    <p>Build a custom Python GStreamer element to save frames with detected objects.</p>
+    <p><strong>Elements:</strong> <code>gvaframesaver_py</code>, <code>gvadetect</code></p>
+    <p><strong>Models:</strong> <code>YOLOv8-Face-Detection</code></p>
+  </div>
+</div>
 
-**[python-elements — Loitering Detection](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/python-elements/loitering_detection)** — CLI, Python. Measure object dwell time with a custom Python element and render a visual alert when the threshold is exceeded. Elements: `gvaanalytics`, `gvawatermark` · Models: `yolo11s`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="python-elements — Loitering Detection" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/python-elements/loitering_detection">python-elements — Loitering Detection</a></strong> — CLI, Python</p>
+    <p>Measure object dwell time with a custom Python element and render a visual alert when the threshold is exceeded.</p>
+    <p><strong>Elements:</strong> <code>gvaanalytics</code>, <code>gvawatermark</code></p>
+    <p><strong>Models:</strong> <code>yolo11s</code></p>
+  </div>
+</div>
 
-**[Face Detection and Classification (Python)](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/face_detection_and_classification)** — Python. Download models from Hugging Face, export to OpenVINO IR, and run inference. Elements: `gvadetect`, `gvaclassify` · Models: `YOLOv8-Face-Detection`, `fairface`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Face Detection and Classification (Python)" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/face_detection_and_classification">Face Detection and Classification (Python)</a></strong> — Python</p>
+    <p>Download models from Hugging Face, export to OpenVINO IR, and run inference.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> <code>YOLOv8-Face-Detection</code>, <code>fairface</code></p>
+  </div>
+</div>
 
 ### Performance & benchmarking
 
-**[Benchmark](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/benchmark)** — CLI, Python. Measure the performance of single- or multi-channel video analytics pipelines. Elements: `gvadetect`, `gvafpscounter` · Models: `centerface` (configurable)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Benchmark" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/benchmark">Benchmark</a></strong> — CLI, Python</p>
+    <p>Measure the performance of single- or multi-channel video analytics pipelines.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvafpscounter</code></p>
+    <p><strong>Models:</strong> <code>centerface</code> (configurable)</p>
+  </div>
+</div>
 
-![](../_images/sample-e2e-performance-thumb.jpg)
-
-**[DL Streamer E2E Performance](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/e2e_performance)** — Python. Compare DL Streamer vs. OpenCV + OpenVINO throughput with a YOLO26s INT8 model. Elements: `gvadetect` · Models: `yolo26s` (INT8)
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample-e2e-performance-thumb.jpg" alt="DL Streamer E2E Performance" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/e2e_performance">DL Streamer E2E Performance</a></strong> — Python</p>
+    <p>Compare DL Streamer vs. OpenCV + OpenVINO throughput with a YOLO26s INT8 model.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code></p>
+    <p><strong>Models:</strong> <code>yolo26s</code> (INT8)</p>
+  </div>
+</div>
 
 ### Interoperability
 
-**[DL Streamer and DeepStream Coexistence](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/coexistence)** — Python. Run pipelines on DL Streamer and/or NVIDIA DeepStream side by side. Elements: `gvadetect` · Models: `yolov8` license-plate detector, `PP-OCRv4`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="DL Streamer and DeepStream Coexistence" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/coexistence">DL Streamer and DeepStream Coexistence</a></strong> — Python</p>
+    <p>Run pipelines on DL Streamer and/or NVIDIA DeepStream side by side.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code></p>
+    <p><strong>Models:</strong> <code>yolov8</code> license-plate detector, <code>PP-OCRv4</code></p>
+  </div>
+</div>
 
-**[Coexistence Benchmark](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/coexistence_benchmark)** — Python. Measure the maximum number of concurrent LPR streams on systems combining Intel and NVIDIA hardware. Elements: `gvadetect` · Models: `yolov8` license-plate detector, `PP-OCRv4`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Coexistence Benchmark" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/coexistence_benchmark">Coexistence Benchmark</a></strong> — Python</p>
+    <p>Measure the maximum number of concurrent LPR streams on systems combining Intel and NVIDIA hardware.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code></p>
+    <p><strong>Models:</strong> <code>yolov8</code> license-plate detector, <code>PP-OCRv4</code></p>
+  </div>
+</div>
 
 ---
 
@@ -181,18 +537,82 @@ These end-to-end reference apps combine multiple elements into complete solution
 Find them under
 [samples/auto_generated_samples](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples).
 
-**[DeepStream Test4 → DL Streamer Conversion](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/deepstream_python_conversion)** — CLI. DL Streamer equivalent of NVIDIA's deepstream-test4 with YOLO11n detection and metadata publishing. Elements: `gvadetect`, `gvametaconvert`, `gvametapublish` · Models: `yolo11n`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="DeepStream Test4 → DL Streamer Conversion" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/deepstream_python_conversion">DeepStream Test4 → DL Streamer Conversion</a></strong> — CLI</p>
+    <p>DL Streamer equivalent of NVIDIA's deepstream-test4 with YOLO11n detection and metadata publishing.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvametaconvert</code>, <code>gvametapublish</code></p>
+    <p><strong>Models:</strong> <code>yolo11n</code></p>
+  </div>
+</div>
 
-**[DeepStream LPR App Conversion (C++)](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/deepstream_cpp_conversion)** — C++. C++ conversion of NVIDIA's DeepStream LPR app — license plate detection, tracking and text recognition. Elements: `gvadetect`, `gvatrack`, `gvaclassify` · Models: YOLOv11, PaddleOCR
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="DeepStream LPR App Conversion (C++)" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/deepstream_cpp_conversion">DeepStream LPR App Conversion (C++)</a></strong> — C++</p>
+    <p>C++ conversion of NVIDIA's DeepStream LPR app — license plate detection, tracking and text recognition.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvatrack</code>, <code>gvaclassify</code></p>
+    <p><strong>Models:</strong> YOLOv11, PaddleOCR</p>
+  </div>
+</div>
 
-**[License Plate Recognition](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/license_plate_recognition)** — CLI. Detect license plates with YOLOv11 and recognize text with PaddleOCR. Elements: `gvadetect`, `gvainference` · Models: `YOLOv11`, `PaddleOCR`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="License Plate Recognition" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/license_plate_recognition">License Plate Recognition</a></strong> — CLI</p>
+    <p>Detect license plates with YOLOv11 and recognize text with PaddleOCR.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvainference</code></p>
+    <p><strong>Models:</strong> <code>YOLOv11</code>, <code>PaddleOCR</code></p>
+  </div>
+</div>
 
-**[Multi-Stream Compose](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/multi_stream_compose)** — CLI. Multi-camera analytics with composite WebRTC output, on-demand recording and a 2x2 GPU-accelerated mosaic. Elements: `gvadetect`, `gvastreammux`, `gvawatermark` · Models: `yolo11s`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Multi-Stream Compose" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/multi_stream_compose">Multi-Stream Compose</a></strong> — CLI</p>
+    <p>Multi-camera analytics with composite WebRTC output, on-demand recording and a 2x2 GPU-accelerated mosaic.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvastreammux</code>, <code>gvawatermark</code></p>
+    <p><strong>Models:</strong> <code>yolo11s</code></p>
+  </div>
+</div>
 
-**[People Detection and Tracking with Deep SORT](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/people_detection_tracking)** — CLI. Detect and track people using YOLO26m and Deep SORT with a Mars-Small-128 re-ID model. Elements: `gvadetect`, `gvatrack` · Models: `yolo26m`, `mars-small128`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="People Detection and Tracking with Deep SORT" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/people_detection_tracking">People Detection and Tracking with Deep SORT</a></strong> — CLI</p>
+    <p>Detect and track people using YOLO26m and Deep SORT with a Mars-Small-128 re-ID model.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvatrack</code></p>
+    <p><strong>Models:</strong> <code>yolo26m</code>, <code>mars-small128</code></p>
+  </div>
+</div>
 
-**[Pose Estimation Compose](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/pose_estimation_compose)** — CLI. Run 4 YOLO pose models in parallel on the same video and composite results into a 2x2 mosaic. Elements: `gvaclassify`, `gvawatermark` · Models: `yolo26n-pose`, `yolo11n-pose`, `yolov8n-pose`, `yolov8l-pose`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Pose Estimation Compose" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/pose_estimation_compose">Pose Estimation Compose</a></strong> — CLI</p>
+    <p>Run 4 YOLO pose models in parallel on the same video and composite results into a 2x2 mosaic.</p>
+    <p><strong>Elements:</strong> <code>gvaclassify</code>, <code>gvawatermark</code></p>
+    <p><strong>Models:</strong> <code>yolo26n-pose</code>, <code>yolo11n-pose</code>, <code>yolov8n-pose</code>, <code>yolov8l-pose</code></p>
+  </div>
+</div>
 
-**[Safety Compliance Monitor](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/safety_compliance)** — CLI. Detect and track workers and use Qwen2.5-VL to verify helmet and harness compliance. Elements: `gvadetect`, `gvatrack`, `gvagenai` · Models: `yolo26m`, `Qwen2.5-VL-3B`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Safety Compliance Monitor" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/safety_compliance">Safety Compliance Monitor</a></strong> — CLI</p>
+    <p>Detect and track workers and use Qwen2.5-VL to verify helmet and harness compliance.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code>, <code>gvatrack</code>, <code>gvagenai</code></p>
+    <p><strong>Models:</strong> <code>yolo26m</code>, <code>Qwen2.5-VL-3B</code></p>
+  </div>
+</div>
 
-**[Smart NVR — Event-Based Recording](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/smart_nvr)** — CLI. Detect people with YOLO11n and record video only when a person is present. Elements: `gvadetect` · Models: `yolo11n`
+<div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
+  <img src="../_images/sample_app_template.jpg" alt="Smart NVR — Event-Based Recording" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:1;">
+    <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/smart_nvr">Smart NVR — Event-Based Recording</a></strong> — CLI</p>
+    <p>Detect people with YOLO11n and record video only when a person is present.</p>
+    <p><strong>Elements:</strong> <code>gvadetect</code></p>
+    <p><strong>Models:</strong> <code>yolo11n</code></p>
+  </div>
+</div>
