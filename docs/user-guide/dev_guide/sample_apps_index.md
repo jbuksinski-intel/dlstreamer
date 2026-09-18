@@ -32,7 +32,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 ### Object detection, classification & segmentation
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-detection-with-yolo-thumb.jpg" alt="Detection with YOLO" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Detection with YOLO](../_images/sample-detection-with-yolo-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/detection_with_yolo">Detection with YOLO</a></strong> — CLI</p>
     <p>Object detection and classification with publicly available YOLO models.</p>
@@ -42,7 +46,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Face Detection and Classification" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Face Detection and Classification](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/face_detection_and_classification">Face Detection and Classification</a></strong> — CLI</p>
     <p>Detect faces and estimate age, gender, emotions and facial landmarks.</p>
@@ -52,7 +60,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-instance-segmentation-thumb.jpg" alt="Instance Segmentation" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Instance Segmentation](../_images/sample-instance-segmentation-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/instance_segmentation">Instance Segmentation</a></strong> — CLI</p>
     <p>Instance segmentation via the <code>object_detect</code> and <code>object_classify</code> bin elements.</p>
@@ -62,7 +74,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Human Pose Estimation" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Human Pose Estimation](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/human_pose_estimation">Human Pose Estimation</a></strong> — CLI</p>
     <p>Full-frame human pose estimation.</p>
@@ -72,7 +88,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Depth Estimation" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Depth Estimation](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/depth_estimation">Depth Estimation</a></strong> — CLI</p>
     <p>YOLO11n detection followed by Depth Anything V2 depth estimation on detected regions.</p>
@@ -82,7 +102,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="License Plate Recognition" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![License Plate Recognition](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/license_plate_recognition">License Plate Recognition</a></strong> — CLI</p>
     <p>YOLO detector combined with an optical character recognition model.</p>
@@ -92,7 +116,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-prompted-detection-thumb.jpg" alt="Prompt-based Object Detection" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Prompt-based Object Detection](../_images/sample-prompted-detection-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/prompted_detection">Prompt-based Object Detection</a></strong> — Python</p>
     <p>Search a video for user-defined objects using an open-vocabulary model (YOLOE).</p>
@@ -102,7 +130,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-geti-deployment-thumb.jpg" alt="Deployment of Geti™ models" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Deployment of Geti™ models](../_images/sample-geti-deployment-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/geti_deployment">Deployment of Geti™ models</a></strong> — CLI</p>
     <p>Deploy Geti™-trained models for detection, anomaly detection and classification.</p>
@@ -112,7 +144,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Motion Detect" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Motion Detect](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/motion_detect">Motion Detect</a></strong> — CLI</p>
     <p>Run detection only over motion ROIs (GPU and CPU paths).</p>
@@ -124,7 +160,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 ### Object tracking & analytics
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Vehicle and Pedestrian Tracking" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Vehicle and Pedestrian Tracking](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/vehicle_pedestrian_tracking">Vehicle and Pedestrian Tracking</a></strong> — CLI</p>
     <p>Object tracking across frames.</p>
@@ -134,7 +174,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-gvaanalytics-tripwire-thumb.jpg" alt="Vehicle Counter with gvaanalytics Tripwires" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Vehicle Counter with gvaanalytics Tripwires](../_images/sample-gvaanalytics-tripwire-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/gvaanalytics_tripwire">Vehicle Counter with gvaanalytics Tripwires</a></strong> — Python</p>
     <p>Count vehicles crossing a virtual line in both directions using tripwires.</p>
@@ -144,7 +188,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-smart-nvr-thumb.jpg" alt="Smart NVR for Lane Hogging Detection" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Smart NVR for Lane Hogging Detection](../_images/sample-smart-nvr-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/smart_nvr">Smart NVR for Lane Hogging Detection</a></strong> — Python</p>
     <p>Build an NVR with custom analytics and video storage to detect lane-hogging events.</p>
@@ -156,7 +204,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 ### Vision-Language Models (VLM) & GenAI
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Using VLM Models with gvagenai" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Using VLM Models with gvagenai](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvagenai">Using VLM Models with gvagenai</a></strong> — CLI</p>
     <p>Video summarization with MiniCPM-V.</p>
@@ -166,7 +218,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-vlm-alerts-thumb.jpg" alt="VLM Alerts" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![VLM Alerts](../_images/sample-vlm-alerts-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/vlm_alerts">VLM Alerts</a></strong> — Python</p>
     <p>Edge alerting pipeline that generates structured JSON alerts per frame with annotated video.</p>
@@ -176,7 +232,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-vlm-self-checkout-thumb.jpg" alt="VLM-assisted Self Checkout" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![VLM-assisted Self Checkout](../_images/sample-vlm-self-checkout-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/vlm_self_checkout">VLM-assisted Self Checkout</a></strong> — Python</p>
     <p>Combine CV object detection with a VLM for item classification, running both locally on edge.</p>
@@ -186,7 +246,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-onvif-camera-analytics-validation-thumb.jpg" alt="ONVIF Camera Analytics Validation" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![ONVIF Camera Analytics Validation](../_images/sample-onvif-camera-analytics-validation-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/onvif_camera_analytics_validation">ONVIF Camera Analytics Validation</a></strong> — Python</p>
     <p>Use a VLM as an additional validation layer for ONVIF-enabled analytics cameras.</p>
@@ -196,7 +260,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Image Embeddings Generation with ViT" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Image Embeddings Generation with ViT](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/lvm">Image Embeddings Generation with ViT</a></strong> — CLI</p>
     <p>Generate image embeddings using the Vision Transformer component of a CLIP model.</p>
@@ -208,7 +276,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 ### Audio analytics
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Audio Event Detection" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Audio Event Detection](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/audio_detect">Audio Event Detection</a></strong> — CLI</p>
     <p>Audio event detection, converting results to JSON.</p>
@@ -218,7 +290,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Audio Transcription" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Audio Transcription](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/audio_transcribe">Audio Transcription</a></strong> — CLI</p>
     <p>Speech transcription using an OpenVINO GenAI Whisper model.</p>
@@ -230,7 +306,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 ### 3D: LiDAR & radar
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="PointPillars Inference with g3dinference" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![PointPillars Inference with g3dinference](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dinference">PointPillars Inference with g3dinference</a></strong> — CLI</p>
     <p>Complete LiDAR-only 3D detection pipeline.</p>
@@ -240,7 +320,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="LiDAR Parse" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![LiDAR Parse](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dlidarparse">LiDAR Parse</a></strong> — CLI</p>
     <p>LiDAR parsing pipeline.</p>
@@ -250,7 +334,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Live LiDAR Capture" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Live LiDAR Capture](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dlidarsrc">Live LiDAR Capture</a></strong> — CLI</p>
     <p>Real-time LiDAR capture from a physical device (RoboSense via rs_driver).</p>
@@ -260,7 +348,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Camera + 3D Object Fusion" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Camera + 3D Object Fusion](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dobjectfuser">Camera + 3D Object Fusion</a></strong> — CLI</p>
     <p>Fuse 2D camera detections with 3D LiDAR detections.</p>
@@ -270,7 +362,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Radar Signal Process" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Radar Signal Process](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/g3dradarprocess">Radar Signal Process</a></strong> — CLI</p>
     <p>mmWave radar signal processing with point-cloud detection, clustering and tracking.</p>
@@ -282,7 +378,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 ### Cameras & input sources
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="RealSense™ Camera" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![RealSense™ Camera](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvarealsense">RealSense™ Camera</a></strong> — CLI</p>
     <p>Capture a video stream from a 3D Intel RealSense™ Depth Camera.</p>
@@ -292,7 +392,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-onvif-cameras-discovery-thumb.jpg" alt="ONVIF Camera Discovery" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![ONVIF Camera Discovery](../_images/sample-onvif-cameras-discovery-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/onvif_cameras_discovery">ONVIF Camera Discovery</a></strong> — Python</p>
     <p>Automatically discover ONVIF cameras on the network and launch pipelines for each.</p>
@@ -302,7 +406,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Multi-camera deployments" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Multi-camera deployments](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/multi_stream">Multi-camera deployments</a></strong> — CLI</p>
     <p>Handle video streams from multiple cameras in a single application.</p>
@@ -312,7 +420,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Multi-Stream Mux/Demux" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Multi-Stream Mux/Demux](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/stream_mux_and_demux">Multi-Stream Mux/Demux</a></strong> — CLI</p>
     <p>Share a single inference pipeline across streams with per-source routing.</p>
@@ -324,7 +436,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 ### Metadata: publishing, access & visualization
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Metadata Publishing" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Metadata Publishing](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/metapublish">Metadata Publishing</a></strong> — CLI</p>
     <p>Convert inference metadata to JSON and publish to file or Kafka/MQTT.</p>
@@ -334,7 +450,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="gvaattachroi" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![gvaattachroi](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvaattachroi">gvaattachroi</a></strong> — CLI</p>
     <p>Define the regions on which inference should be performed.</p>
@@ -344,7 +464,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="FPS Throttle" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![FPS Throttle](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvafpsthrottle">FPS Throttle</a></strong> — CLI</p>
     <p>Throttle framerate independently of sink sync, without frame duplication or dropping.</p>
@@ -354,7 +478,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-watermark-meta-thumb.jpg" alt="Watermark Metadata" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Watermark Metadata](../_images/sample-watermark-meta-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/watermark_meta">Watermark Metadata</a></strong> — Python</p>
     <p>Attach custom drawing primitives (hexagons, lines, circles, text) and render them.</p>
@@ -364,7 +492,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Draw Face Attributes (C++)" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Draw Face Attributes (C++)](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/cpp/draw_face_attributes">Draw Face Attributes (C++)</a></strong> — C++</p>
     <p>Set a C callback to access frame metadata and visualize inference results.</p>
@@ -374,7 +506,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Draw Face Attributes (Python)" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Draw Face Attributes (Python)](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/draw_face_attributes">Draw Face Attributes (Python)</a></strong> — Python</p>
     <p>Set a Python callback to access frame metadata and visualize inference results.</p>
@@ -384,7 +520,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-open-close-valve-thumb.jpg" alt="Open Close Valve" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Open Close Valve](../_images/sample-open-close-valve-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/open_close_valve">Open Close Valve</a></strong> — Python</p>
     <p>Open/close a GStreamer <code>valve</code> branch from a callback based on detection results.</p>
@@ -394,7 +534,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-hello-dlstreamer-thumb.jpg" alt="Hello DL Streamer" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Hello DL Streamer](../_images/sample-hello-dlstreamer-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/hello_dlstreamer">Hello DL Streamer</a></strong> — Python</p>
     <p>Build a detection pipeline, analyze metadata to count objects, and visualize results.</p>
@@ -406,7 +550,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 ### Customization & extensibility
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Custom Post-Processing Library — Classification" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Custom Post-Processing Library — Classification](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/custom_postproc/classify">Custom Post-Processing Library — Classification</a></strong> — CLI, C++</p>
     <p>Write a custom post-processing library that converts emotion-classification outputs to GstAnalytics metadata.</p>
@@ -416,7 +564,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Custom Post-Processing Library — Detection" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Custom Post-Processing Library — Detection](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/custom_postproc/detect">Custom Post-Processing Library — Detection</a></strong> — CLI, C++</p>
     <p>Write a custom post-processing library that converts YOLOv11 tensor outputs to detection metadata.</p>
@@ -426,7 +578,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="gvapython — Face Detection and Classification" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![gvapython — Face Detection and Classification](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvapython/face_detection_and_classification">gvapython — Face Detection and Classification</a></strong> — CLI, Python</p>
     <p>Customize a pipeline with a Python script for inference post-processing.</p>
@@ -436,7 +592,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="gvapython — Save Frames with ROI" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![gvapython — Save Frames with ROI](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/gvapython/save_frames_with_ROI_only">gvapython — Save Frames with ROI</a></strong> — CLI, Python</p>
     <p>Use <code>gvapython</code> to save video frames containing detected objects to disk.</p>
@@ -446,7 +606,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="python-elements — Face Detection and Classification" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![python-elements — Face Detection and Classification](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/python-elements/face_detection_and_classification">python-elements — Face Detection and Classification</a></strong> — CLI, Python</p>
     <p>Build a custom Python GStreamer element using the GstAnalytics metadata API.</p>
@@ -456,7 +620,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="python-elements — Save Frames with ROI" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![python-elements — Save Frames with ROI](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/python-elements/save_frames_with_ROI_only">python-elements — Save Frames with ROI</a></strong> — CLI, Python</p>
     <p>Build a custom Python GStreamer element to save frames with detected objects.</p>
@@ -466,7 +634,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="python-elements — Loitering Detection" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![python-elements — Loitering Detection](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/python-elements/loitering_detection">python-elements — Loitering Detection</a></strong> — CLI, Python</p>
     <p>Measure object dwell time with a custom Python element and render a visual alert when the threshold is exceeded.</p>
@@ -476,7 +648,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Face Detection and Classification (Python)" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Face Detection and Classification (Python)](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/face_detection_and_classification">Face Detection and Classification (Python)</a></strong> — Python</p>
     <p>Download models from Hugging Face, export to OpenVINO IR, and run inference.</p>
@@ -488,7 +664,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 ### Performance & benchmarking
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Benchmark" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Benchmark](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/benchmark">Benchmark</a></strong> — CLI, Python</p>
     <p>Measure the performance of single- or multi-channel video analytics pipelines.</p>
@@ -498,7 +678,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample-e2e-performance-thumb.jpg" alt="DL Streamer E2E Performance" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![DL Streamer E2E Performance](../_images/sample-e2e-performance-thumb.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/e2e_performance">DL Streamer E2E Performance</a></strong> — Python</p>
     <p>Compare DL Streamer vs. OpenCV + OpenVINO throughput with a YOLO26s INT8 model.</p>
@@ -510,7 +694,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 ### Interoperability
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="DL Streamer and DeepStream Coexistence" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![DL Streamer and DeepStream Coexistence](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/coexistence">DL Streamer and DeepStream Coexistence</a></strong> — Python</p>
     <p>Run pipelines on DL Streamer and/or NVIDIA DeepStream side by side.</p>
@@ -520,7 +708,11 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Coexistence Benchmark" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Coexistence Benchmark](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/coexistence_benchmark">Coexistence Benchmark</a></strong> — Python</p>
     <p>Measure the maximum number of concurrent LPR streams on systems combining Intel and NVIDIA hardware.</p>
@@ -538,7 +730,11 @@ Find them under
 [samples/auto_generated_samples](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples).
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="DeepStream Test4 → DL Streamer Conversion" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![DeepStream Test4 → DL Streamer Conversion](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/deepstream_python_conversion">DeepStream Test4 → DL Streamer Conversion</a></strong> — CLI</p>
     <p>DL Streamer equivalent of NVIDIA's deepstream-test4 with YOLO11n detection and metadata publishing.</p>
@@ -548,7 +744,11 @@ Find them under
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="DeepStream LPR App Conversion (C++)" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![DeepStream LPR App Conversion (C++)](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/deepstream_cpp_conversion">DeepStream LPR App Conversion (C++)</a></strong> — C++</p>
     <p>C++ conversion of NVIDIA's DeepStream LPR app — license plate detection, tracking and text recognition.</p>
@@ -558,7 +758,11 @@ Find them under
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="License Plate Recognition" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![License Plate Recognition](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/license_plate_recognition">License Plate Recognition</a></strong> — CLI</p>
     <p>Detect license plates with YOLOv11 and recognize text with PaddleOCR.</p>
@@ -568,7 +772,11 @@ Find them under
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Multi-Stream Compose" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Multi-Stream Compose](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/multi_stream_compose">Multi-Stream Compose</a></strong> — CLI</p>
     <p>Multi-camera analytics with composite WebRTC output, on-demand recording and a 2x2 GPU-accelerated mosaic.</p>
@@ -578,7 +786,11 @@ Find them under
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="People Detection and Tracking with Deep SORT" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![People Detection and Tracking with Deep SORT](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/people_detection_tracking">People Detection and Tracking with Deep SORT</a></strong> — CLI</p>
     <p>Detect and track people using YOLO26m and Deep SORT with a Mars-Small-128 re-ID model.</p>
@@ -588,7 +800,11 @@ Find them under
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Pose Estimation Compose" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Pose Estimation Compose](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/pose_estimation_compose">Pose Estimation Compose</a></strong> — CLI</p>
     <p>Run 4 YOLO pose models in parallel on the same video and composite results into a 2x2 mosaic.</p>
@@ -598,7 +814,11 @@ Find them under
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Safety Compliance Monitor" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Safety Compliance Monitor](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/safety_compliance">Safety Compliance Monitor</a></strong> — CLI</p>
     <p>Detect and track workers and use Qwen2.5-VL to verify helmet and harness compliance.</p>
@@ -608,7 +828,11 @@ Find them under
 </div>
 
 <div style="display:flex; gap:1.5rem; align-items:flex-start; margin:1.5rem 0;">
-  <img src="../_images/sample_app_template.jpg" alt="Smart NVR — Event-Based Recording" style="flex:0 0 200px; max-width:200px; border-radius:6px;">
+  <div style="flex:0 0 200px; max-width:200px;">
+
+  ![Smart NVR — Event-Based Recording](../_images/sample_app_template.jpg)
+
+  </div>
   <div style="flex:1;">
     <p style="font-size:1.1rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/auto_generated_samples/smart_nvr">Smart NVR — Event-Based Recording</a></strong> — CLI</p>
     <p>Detect people with YOLO11n and record video only when a person is present.</p>
