@@ -134,11 +134,18 @@ tutorial
 
 :::{toctree}
 :hidden:
+:caption: Samples
+
+Using Sample Apps <dev_guide/using_sample_apps>
+Available Sample Apps <dev_guide/sample_apps_index>
+
+:::
+
+:::{toctree}
+:hidden:
 :caption: Developer Resources
 
 Developer Guide <dev_guide/dev_guide_index>
-Using Sample Apps <dev_guide/using_sample_apps>
-Available Sample Apps <dev_guide/sample_apps_index>
 
 :::
 
