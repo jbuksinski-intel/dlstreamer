@@ -27,124 +27,134 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 > **Tip:** Use your browser's find-in-page (Ctrl+F / Cmd+F) to search across all samples by name,
 > element (e.g. `gvadetect`), or model (e.g. `yolo11n`).
 
+<!-- Shared card styling (GitHub strips this <style> block harmlessly; Sphinx applies it) -->
+<style>
+.sample-card { display:flex; gap:1rem; align-items:center; margin:0.5rem 0; padding-bottom:0.5rem; border-bottom:1px solid #4443; }
+.sample-thumb { flex:0 0 96px; max-width:96px; }
+.sample-body { flex:1; line-height:1.35; }
+.sample-title { margin:0 0 0.2rem; }
+.sample-desc { margin:0.15rem 0; }
+.sample-meta { margin:0.15rem 0; font-size:0.9rem; color:#888; }
+</style>
+
 ---
 
 ### Object detection, classification & segmentation
 
-<div style="display:flex; gap:1rem; align-items:center; margin:0.5rem 0; padding-bottom:0.5rem; border-bottom:1px solid #4443;">
-  <div style="flex:0 0 96px; max-width:96px;">
+<div class="sample-card">
+  <div class="sample-thumb">
 
   ![Detection with YOLO](../_images/sample-detection-with-yolo-thumb.jpg)
 
   </div>
-  <div style="flex:1; line-height:1.35;">
-    <p style="margin:0 0 0.2rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/detection_with_yolo">Detection with YOLO</a></strong> <code>CLI</code></p>
-    <p style="margin:0.15rem 0;">Object detection and classification with publicly available YOLO models.</p>
-    <p style="margin:0.15rem 0; font-size:0.9rem; color:#888;"><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolox_s</code> (default; many YOLO variants)</p>
+  <div class="sample-body">
+    <p class="sample-title"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/detection_with_yolo">Detection with YOLO</a></strong> <code>CLI</code></p>
+    <p class="sample-desc">Object detection and classification with publicly available YOLO models.</p>
+    <p class="sample-meta"><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolox_s</code> (default; many YOLO variants)</p>
   </div>
 </div>
 
-<div style="display:flex; gap:1rem; align-items:center; margin:0.5rem 0; padding-bottom:0.5rem; border-bottom:1px solid #4443;">
-  <div style="flex:0 0 96px; max-width:96px;">
+<div class="sample-card">
+  <div class="sample-thumb">
 
   ![Face Detection and Classification](../_images/sample_app_template.jpg)
 
   </div>
-  <div style="flex:1; line-height:1.35;">
-    <p style="margin:0 0 0.2rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/face_detection_and_classification">Face Detection and Classification</a></strong> <code>CLI</code></p>
-    <p style="margin:0.15rem 0;">Detect faces and estimate age, gender, emotions and facial landmarks.</p>
-    <p style="margin:0.15rem 0; font-size:0.9rem; color:#888;"><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>centerface</code>, <code>dima806_facial_age_image_detection</code>, <code>dima806_fairface_gender_image_detection</code>, <code>dima806_face_emotions_image_detection</code></p>
+  <div class="sample-body">
+    <p class="sample-title"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/face_detection_and_classification">Face Detection and Classification</a></strong> <code>CLI</code></p>
+    <p class="sample-desc">Detect faces and estimate age, gender, emotions and facial landmarks.</p>
+    <p class="sample-meta"><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>centerface</code>, <code>dima806_facial_age_image_detection</code>, <code>dima806_fairface_gender_image_detection</code>, <code>dima806_face_emotions_image_detection</code></p>
   </div>
 </div>
 
-<div style="display:flex; gap:1rem; align-items:center; margin:0.5rem 0; padding-bottom:0.5rem; border-bottom:1px solid #4443;">
-  <div style="flex:0 0 96px; max-width:96px;">
+<div class="sample-card">
+  <div class="sample-thumb">
 
   ![Instance Segmentation](../_images/sample-instance-segmentation-thumb.jpg)
 
   </div>
-  <div style="flex:1; line-height:1.35;">
-    <p style="margin:0 0 0.2rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/instance_segmentation">Instance Segmentation</a></strong> <code>CLI</code></p>
-    <p style="margin:0.15rem 0;">Instance segmentation via the <code>object_detect</code> and <code>object_classify</code> bin elements.</p>
-    <p style="margin:0.15rem 0; font-size:0.9rem; color:#888;"><strong>Elements:</strong> <code>object_detect</code>, <code>object_classify</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolo26s-seg</code> (default; also <code>yolo11s-seg</code>)</p>
+  <div class="sample-body">
+    <p class="sample-title"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/instance_segmentation">Instance Segmentation</a></strong> <code>CLI</code></p>
+    <p class="sample-desc">Instance segmentation via the <code>object_detect</code> and <code>object_classify</code> bin elements.</p>
+    <p class="sample-meta"><strong>Elements:</strong> <code>object_detect</code>, <code>object_classify</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolo26s-seg</code> (default; also <code>yolo11s-seg</code>)</p>
   </div>
 </div>
 
-<div style="display:flex; gap:1rem; align-items:center; margin:0.5rem 0; padding-bottom:0.5rem; border-bottom:1px solid #4443;">
-  <div style="flex:0 0 96px; max-width:96px;">
+<div class="sample-card">
+  <div class="sample-thumb">
 
   ![Human Pose Estimation](../_images/sample_app_template.jpg)
 
   </div>
-  <div style="flex:1; line-height:1.35;">
-    <p style="margin:0 0 0.2rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/human_pose_estimation">Human Pose Estimation</a></strong> <code>CLI</code></p>
-    <p style="margin:0.15rem 0;">Full-frame human pose estimation.</p>
-    <p style="margin:0.15rem 0; font-size:0.9rem; color:#888;"><strong>Elements:</strong> <code>gvaclassify</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolo26s-pose</code></p>
+  <div class="sample-body">
+    <p class="sample-title"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/human_pose_estimation">Human Pose Estimation</a></strong> <code>CLI</code></p>
+    <p class="sample-desc">Full-frame human pose estimation.</p>
+    <p class="sample-meta"><strong>Elements:</strong> <code>gvaclassify</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolo26s-pose</code></p>
   </div>
 </div>
 
-<div style="display:flex; gap:1rem; align-items:center; margin:0.5rem 0; padding-bottom:0.5rem; border-bottom:1px solid #4443;">
-  <div style="flex:0 0 96px; max-width:96px;">
+<div class="sample-card">
+  <div class="sample-thumb">
 
   ![Depth Estimation](../_images/sample_app_template.jpg)
 
   </div>
-  <div style="flex:1; line-height:1.35;">
-    <p style="margin:0 0 0.2rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/depth_estimation">Depth Estimation</a></strong> <code>CLI</code></p>
-    <p style="margin:0.15rem 0;">YOLO11n detection followed by Depth Anything V2 depth estimation on detected regions.</p>
-    <p style="margin:0.15rem 0; font-size:0.9rem; color:#888;"><strong>Elements:</strong> <code>gvadetect</code>, <code>gvainference</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolo11n</code>, <code>Depth-Anything-V2-Small-hf</code></p>
+  <div class="sample-body">
+    <p class="sample-title"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/depth_estimation">Depth Estimation</a></strong> <code>CLI</code></p>
+    <p class="sample-desc">YOLO11n detection followed by Depth Anything V2 depth estimation on detected regions.</p>
+    <p class="sample-meta"><strong>Elements:</strong> <code>gvadetect</code>, <code>gvainference</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolo11n</code>, <code>Depth-Anything-V2-Small-hf</code></p>
   </div>
 </div>
 
-<div style="display:flex; gap:1rem; align-items:center; margin:0.5rem 0; padding-bottom:0.5rem; border-bottom:1px solid #4443;">
-  <div style="flex:0 0 96px; max-width:96px;">
+<div class="sample-card">
+  <div class="sample-thumb">
 
   ![License Plate Recognition](../_images/sample_app_template.jpg)
 
   </div>
-  <div style="flex:1; line-height:1.35;">
-    <p style="margin:0 0 0.2rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/license_plate_recognition">License Plate Recognition</a></strong> <code>CLI</code></p>
-    <p style="margin:0.15rem 0;">YOLO detector combined with an optical character recognition model.</p>
-    <p style="margin:0.15rem 0; font-size:0.9rem; color:#888;"><strong>Elements:</strong> <code>gvadetect</code>, <code>gvainference</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolov8</code> license-plate detector, <code>PP-OCRv4</code></p>
+  <div class="sample-body">
+    <p class="sample-title"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/license_plate_recognition">License Plate Recognition</a></strong> <code>CLI</code></p>
+    <p class="sample-desc">YOLO detector combined with an optical character recognition model.</p>
+    <p class="sample-meta"><strong>Elements:</strong> <code>gvadetect</code>, <code>gvainference</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolov8</code> license-plate detector, <code>PP-OCRv4</code></p>
   </div>
 </div>
 
-<div style="display:flex; gap:1rem; align-items:center; margin:0.5rem 0; padding-bottom:0.5rem; border-bottom:1px solid #4443;">
-  <div style="flex:0 0 96px; max-width:96px;">
+<div class="sample-card">
+  <div class="sample-thumb">
 
   ![Prompt-based Object Detection](../_images/sample-prompted-detection-thumb.jpg)
 
   </div>
-  <div style="flex:1; line-height:1.35;">
-    <p style="margin:0 0 0.2rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/prompted_detection">Prompt-based Object Detection</a></strong> <code>Python</code></p>
-    <p style="margin:0.15rem 0;">Search a video for user-defined objects using an open-vocabulary model (YOLOE).</p>
-    <p style="margin:0.15rem 0; font-size:0.9rem; color:#888;"><strong>Elements:</strong> <code>gvadetect</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yoloe-26s-seg</code> (text-prompt, class baked in at export)</p>
+  <div class="sample-body">
+    <p class="sample-title"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/prompted_detection">Prompt-based Object Detection</a></strong> <code>Python</code></p>
+    <p class="sample-desc">Search a video for user-defined objects using an open-vocabulary model (YOLOE).</p>
+    <p class="sample-meta"><strong>Elements:</strong> <code>gvadetect</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yoloe-26s-seg</code> (text-prompt, class baked in at export)</p>
   </div>
 </div>
 
-<div style="display:flex; gap:1rem; align-items:center; margin:0.5rem 0; padding-bottom:0.5rem; border-bottom:1px solid #4443;">
-  <div style="flex:0 0 96px; max-width:96px;">
+<div class="sample-card">
+  <div class="sample-thumb">
 
   ![Deployment of Geti™ models](../_images/sample-geti-deployment-thumb.jpg)
 
   </div>
-  <div style="flex:1; line-height:1.35;">
-    <p style="margin:0 0 0.2rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/geti_deployment">Deployment of Geti™ models</a></strong> <code>CLI</code></p>
-    <p style="margin:0.15rem 0;">Deploy Geti™-trained models for detection, anomaly detection and classification.</p>
-    <p style="margin:0.15rem 0; font-size:0.9rem; color:#888;"><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code> &nbsp;|&nbsp; <strong>Models:</strong> Geti™-trained (Padim / STFPM / UFlow)</p>
+  <div class="sample-body">
+    <p class="sample-title"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/geti_deployment">Deployment of Geti™ models</a></strong> <code>CLI</code></p>
+    <p class="sample-desc">Deploy Geti™-trained models for detection, anomaly detection and classification.</p>
+    <p class="sample-meta"><strong>Elements:</strong> <code>gvadetect</code>, <code>gvaclassify</code> &nbsp;|&nbsp; <strong>Models:</strong> Geti™-trained (Padim / STFPM / UFlow)</p>
   </div>
 </div>
 
-<div style="display:flex; gap:1rem; align-items:center; margin:0.5rem 0; padding-bottom:0.5rem; border-bottom:1px solid #4443;">
-  <div style="flex:0 0 96px; max-width:96px;">
+<div class="sample-card">
+  <div class="sample-thumb">
 
   ![Motion Detect](../_images/sample_app_template.jpg)
 
   </div>
-  <div style="flex:1; line-height:1.35;">
-    <p style="margin:0 0 0.2rem;"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/motion_detect">Motion Detect</a></strong> <code>CLI</code></p>
-    <p style="margin:0.15rem 0;">Run detection only over motion ROIs (GPU and CPU paths).</p>
-    <p style="margin:0.15rem 0; font-size:0.9rem; color:#888;"><strong>Elements:</strong> <code>gvamotiondetect</code>, <code>gvadetect</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolov8n</code></p>
+  <div class="sample-body">
+    <p class="sample-title"><strong><a href="https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/motion_detect">Motion Detect</a></strong> <code>CLI</code></p>
+    <p class="sample-desc">Run detection only over motion ROIs (GPU and CPU paths).</p>
+    <p class="sample-meta"><strong>Elements:</strong> <code>gvamotiondetect</code>, <code>gvadetect</code> &nbsp;|&nbsp; <strong>Models:</strong> <code>yolov8n</code></p>
   </div>
 </div>
 
