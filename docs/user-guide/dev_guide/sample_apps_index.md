@@ -41,122 +41,17 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 
 ### Object detection, classification & segmentation
 
-<div class="sample-card">
-<img class="sample-thumb" src="../_images/sample-detection-with-yolo-thumb.jpg" alt="Detection with YOLO" width="96">
-<div class="sample-body">
-
-**[Detection with YOLO](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/detection_with_yolo)** `CLI`
-
-Object detection and classification with publicly available YOLO models.
-
-**Elements:** `gvadetect`, `gvaclassify` &nbsp;|&nbsp; **Models:** `yolox_s` (default; many YOLO variants)
-
-</div>
-</div>
-
-<div class="sample-card">
-<img class="sample-thumb" src="../_images/sample_app_template.jpg" alt="Face Detection and Classification" width="96">
-<div class="sample-body">
-
-**[Face Detection and Classification](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/face_detection_and_classification)** `CLI`
-
-Detect faces and estimate age, gender, emotions and facial landmarks.
-
-**Elements:** `gvadetect`, `gvaclassify` &nbsp;|&nbsp; **Models:** `centerface`, `dima806_facial_age_image_detection`, `dima806_fairface_gender_image_detection`, `dima806_face_emotions_image_detection`
-
-</div>
-</div>
-
-<div class="sample-card">
-<img class="sample-thumb" src="../_images/sample-instance-segmentation-thumb.jpg" alt="Instance Segmentation" width="96">
-<div class="sample-body">
-
-**[Instance Segmentation](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/instance_segmentation)** `CLI`
-
-Instance segmentation via the `object_detect` and `object_classify` bin elements.
-
-**Elements:** `object_detect`, `object_classify` &nbsp;|&nbsp; **Models:** `yolo26s-seg` (default; also `yolo11s-seg`)
-
-</div>
-</div>
-
-<div class="sample-card">
-<img class="sample-thumb" src="../_images/sample_app_template.jpg" alt="Human Pose Estimation" width="96">
-<div class="sample-body">
-
-**[Human Pose Estimation](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/human_pose_estimation)** `CLI`
-
-Full-frame human pose estimation.
-
-**Elements:** `gvaclassify` &nbsp;|&nbsp; **Models:** `yolo26s-pose`
-
-</div>
-</div>
-
-<div class="sample-card">
-<img class="sample-thumb" src="../_images/sample_app_template.jpg" alt="Depth Estimation" width="96">
-<div class="sample-body">
-
-**[Depth Estimation](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/depth_estimation)** `CLI`
-
-YOLO11n detection followed by Depth Anything V2 depth estimation on detected regions.
-
-**Elements:** `gvadetect`, `gvainference` &nbsp;|&nbsp; **Models:** `yolo11n`, `Depth-Anything-V2-Small-hf`
-
-</div>
-</div>
-
-<div class="sample-card">
-<img class="sample-thumb" src="../_images/sample_app_template.jpg" alt="License Plate Recognition" width="96">
-<div class="sample-body">
-
-**[License Plate Recognition](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/license_plate_recognition)** `CLI`
-
-YOLO detector combined with an optical character recognition model.
-
-**Elements:** `gvadetect`, `gvainference` &nbsp;|&nbsp; **Models:** `yolov8` license-plate detector, `PP-OCRv4`
-
-</div>
-</div>
-
-<div class="sample-card">
-<img class="sample-thumb" src="../_images/sample-prompted-detection-thumb.jpg" alt="Prompt-based Object Detection" width="96">
-<div class="sample-body">
-
-**[Prompt-based Object Detection](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/prompted_detection)** `Python`
-
-Search a video for user-defined objects using an open-vocabulary model (YOLOE).
-
-**Elements:** `gvadetect` &nbsp;|&nbsp; **Models:** `yoloe-26s-seg` (text-prompt, class baked in at export)
-
-</div>
-</div>
-
-<div class="sample-card">
-<img class="sample-thumb" src="../_images/sample-geti-deployment-thumb.jpg" alt="Deployment of Geti™ models" width="96">
-<div class="sample-body">
-
-**[Deployment of Geti™ models](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/geti_deployment)** `CLI`
-
-Deploy Geti™-trained models for detection, anomaly detection and classification.
-
-**Elements:** `gvadetect`, `gvaclassify` &nbsp;|&nbsp; **Models:** Geti™-trained (Padim / STFPM / UFlow)
-
-</div>
-</div>
-
-<div class="sample-card">
-<img class="sample-thumb" src="../_images/sample_app_template.jpg" alt="Motion Detect" width="96">
-<div class="sample-body">
-
-**[Motion Detect](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/motion_detect)** `CLI`
-
-Run detection only over motion ROIs (GPU and CPU paths).
-
-**Elements:** `gvamotiondetect`, `gvadetect` &nbsp;|&nbsp; **Models:** `yolov8n`
-
-</div>
-</div>
+| | Sample | Description | Elements | Models |
+|---|---|---|---|---|
+| <img src="../_images/sample-detection-with-yolo-thumb.jpg" width="72"> | **[Detection with YOLO](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/detection_with_yolo)** `CLI` | Object detection and classification with publicly available YOLO models. | `gvadetect`, `gvaclassify` | `yolox_s` (default; many YOLO variants) |
+| <img src="../_images/sample_app_template.jpg" width="72"> | **[Face Detection and Classification](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/face_detection_and_classification)** `CLI` | Detect faces and estimate age, gender, emotions and facial landmarks. | `gvadetect`, `gvaclassify` | `centerface`, `dima806_facial_age_image_detection`, `dima806_fairface_gender_image_detection`, `dima806_face_emotions_image_detection` |
+| <img src="../_images/sample-instance-segmentation-thumb.jpg" width="72"> | **[Instance Segmentation](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/instance_segmentation)** `CLI` | Instance segmentation via the `object_detect` and `object_classify` bin elements. | `object_detect`, `object_classify` | `yolo26s-seg` (default; also `yolo11s-seg`) |
+| <img src="../_images/sample_app_template.jpg" width="72"> | **[Human Pose Estimation](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/human_pose_estimation)** `CLI` | Full-frame human pose estimation. | `gvaclassify` | `yolo26s-pose` |
+| <img src="../_images/sample_app_template.jpg" width="72"> | **[Depth Estimation](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/depth_estimation)** `CLI` | YOLO11n detection followed by Depth Anything V2 depth estimation on detected regions. | `gvadetect`, `gvainference` | `yolo11n`, `Depth-Anything-V2-Small-hf` |
+| <img src="../_images/sample_app_template.jpg" width="72"> | **[License Plate Recognition](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/license_plate_recognition)** `CLI` | YOLO detector combined with an optical character recognition model. | `gvadetect`, `gvainference` | `yolov8` license-plate detector, `PP-OCRv4` |
+| <img src="../_images/sample-prompted-detection-thumb.jpg" width="72"> | **[Prompt-based Object Detection](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/python/prompted_detection)** `Python` | Search a video for user-defined objects using an open-vocabulary model (YOLOE). | `gvadetect` | `yoloe-26s-seg` (text-prompt, class baked in at export) |
+| <img src="../_images/sample-geti-deployment-thumb.jpg" width="72"> | **[Deployment of Geti™ models](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/geti_deployment)** `CLI` | Deploy Geti™-trained models for detection, anomaly detection and classification. | `gvadetect`, `gvaclassify` | Geti™-trained (Padim / STFPM / UFlow) |
+| <img src="../_images/sample_app_template.jpg" width="72"> | **[Motion Detect](https://github.com/open-edge-platform/dlstreamer/tree/main/samples/gstreamer/gst_launch/motion_detect)** `CLI` | Run detection only over motion ROIs (GPU and CPU paths). | `gvamotiondetect`, `gvadetect` | `yolov8n` |
 
 ### Object tracking & analytics
 
