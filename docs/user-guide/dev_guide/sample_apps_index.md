@@ -21,7 +21,8 @@ demonstrates, the elements/models it uses, and its language — `CLI` (`gst-laun
 | [Performance & benchmarking (2)](#performance-benchmarking) | [Interoperability (2)](#interoperability) |
 | [Auto-generated reference applications (8)](#auto-generated-reference-applications) | |
 
-> **Tip:** Use your browser's find-in-page (Ctrl+F / Cmd+F) to search across all samples by name,
+> [!TIP] 
+> Use your browser's find-in-page (Ctrl+F / Cmd+F) to search across all samples by name,
 > element (e.g. `gvadetect`), or model (e.g. `yolo11n`).
 
 ---
